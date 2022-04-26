@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.depthmapping.R;
 import com.example.depthmapping.Util;
-import com.example.depthmapping.classifier.ImageClassifier;
+
 import com.example.depthmapping.databinding.FragmentLoadingBinding;
 import com.example.depthmapping.ui.home.recognized.RecognizedImageFragment;
 
@@ -73,7 +73,8 @@ public class LoadingFragment extends Fragment {
                 .readTimeout(300, TimeUnit.SECONDS)
                 .build();
 
-        String url = "https://5efc-34-122-12-129.ngrok.io";
+        // DO NOT FORGET HTTPS
+        String url = "https://a6ac-35-195-243-83.ngrok.io";
 
         RequestBody formBody = new FormBody.Builder()
                 .add("Image", image)
@@ -93,7 +94,7 @@ public class LoadingFragment extends Fragment {
 
         client.newCall(request).enqueue(new Callback() {
             @Override
-            public void onFailure(Call call, IOException e) {
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 e.printStackTrace();
             }
 

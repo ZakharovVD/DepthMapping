@@ -25,7 +25,6 @@ public class NeiroNetAdapter  extends RecyclerView.Adapter<NeiroNetAdapter.ViewH
 
     @Override
     public NeiroNetAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View view = inflater.inflate(R.layout.neiro_net_list_item, parent, false);
         return new ViewHolder(view);
     }

@@ -33,7 +33,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 import com.example.depthmapping.Util;
-import com.example.depthmapping.classifier.ImageClassifier;
+
 import com.example.depthmapping.databinding.FragmentHomeBinding;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -49,7 +49,6 @@ public class HomeFragment extends Fragment {
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1000;
     private static final int CAMERA_REQEUST_CODE = 10001;
 
-    private ImageClassifier imageClassifier;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -150,8 +149,6 @@ public class HomeFragment extends Fragment {
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.add(R.id.container, frag2);
                 ft.commit();
-
-
             }
         }
         super.onActivityResult(requestCode, resultCode, data);

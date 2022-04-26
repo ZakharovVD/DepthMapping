@@ -8,10 +8,9 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-import com.example.depthmapping.classifier.ImageClassifier;
 
 import java.io.ByteArrayOutputStream;
-import java.util.List;
+
 
 @Entity(tableName = "processedImage")
 public class ProcessedImage {

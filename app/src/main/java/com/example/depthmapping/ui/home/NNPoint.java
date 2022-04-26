@@ -3,6 +3,11 @@ package com.example.depthmapping.ui.home;
 public class NNPoint {
     String type;
     String accuracy;
+    String distance;
+
+    public NNPoint(){
+
+    }
 
     public NNPoint(String type, String accuracy) {
         this.type = type;
