@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DepthMapping</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Получение карты глубины</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="take_picture">Сделать фото</string>
+
+    <string name="neiro_net">Нейросеть</string>
+    <string name="instruction">Инструкция</string>
+    <string name="settings">Настройки</string>
+
+    <string name="text_test">Мы представляем автономную реализацию нашего оператора слияния. Этот новый репозиторий позволяет использовать любую пару монокулярных оценок глубины в нашей двойной оценке. Это включает в себя использование отдельных сетей для оценки базового и высокого разрешения, использование сетей, не поддерживаемых этим репозиторием (например, Midas-v3), или использование отредактированных вручную карт глубины для художественного использования. Это также будет полезно ученым, разрабатывающим MDE на основе CNN, как способ быстро применить двойную оценку к своей собственной сети. Для получения более подробной информации, пожалуйста, посмотрите здесь. Используйте --max_res в качестве входного аргумента для run.py в сочетании с --Final, чтобы установить ограничение на разрешение результатов, генерируемых нашим методом.
+
+Мы предоставляем этот параметр в качестве компромисса между временем выполнения и разрешением. Использование этого сокращает время выполнения, если требуется только результат до определенного мегапикселя.
+
+Этот параметр устанавливает ограничение на больший размер результата в пикселях (при сохранении пропорций). Например, для генерации результатов с большим размером до 2000 пикселей используйте следующее:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detective_objects">Обнаруженые объекты</string>
+    <string name="history">История</string>
+    <string name="segmentation">Сегментация</string>
+    <string name="recognized_object">распознание объектов</string>
+    <string name="depth_map">карта глубины</string>
+    <string name="type_neironet">Тип нейронной сети</string>
+    <string name="secmentation_hint">Выберите размерность сегментации. Размерность сегментации повлияет на качества обработки. Чем больше сегментация, тем лучше качество.</string>
+    <string name="origin">оригинал</string>
+    <string name="theme">тема</string>
+    <string name="language">язык</string>
+    <string name="night_theme">тёмная</string>
+    <string name="light_theme">светлая</string>
+    <string name="instraction_header">ИНСТРУКЦИЯ</string>
+    <string name="upload_image">загрузить изображение</string>
+</resources>
